@@ -39,11 +39,11 @@ app.post("/", function(req, res) {
     
     res.write(`<h1>The coordinates (${lat}, ${lon}),  is the city of ${city}.`);
     res.write(`<h2>The weather in ${city} is ${weatherDescription}.`);
-    res.write(`<h2>Temperature: ${temp.toFixed(1)}°F`);
-    res.write("<img src=" + imageURL + ">");
+    res.write(`<h3>Temperature: ${temp.toFixed(1)}°F`);
+    res.write(`<img src=${imageURL}>`);
     res.write(`<h3>Humidity: ${humidity}%`);
-    res.write(`<h3>Windspeed: ${windSpeed.toFixed(0)} mph`);
     res.write(`<h3>Cloudiness: ${cloudiness}%`);
+    res.write(`<h3>Windspeed: ${windSpeed.toFixed(0)} mph`);
 
        });
    });
