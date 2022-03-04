@@ -7,12 +7,17 @@
   <body>
 
     <h1>Weather API Results</h1>
-
+    <h2>Enter GPS Coordinates</h2>
+    
     <form action="/" method="post">
-        <label for="cityNameInput">City: </label>
-        <input id = "cityNameInput" type="text" name="cityNameInput">
+        <label for="latInput">Latitude: </label>
+        <input id="latInput" type="number" step="any" name="latInput" placeholder="use decimal degree">
+        <label for="lonInput">Longitude: </label>
+        <input id="lonInput" type="number" step="any" name="lonInput" placeholder="use decimal degree">
         <button type="submit">Go</button>
+        
     </form>
+    
 
   </body>
 </html>
